@@ -1,0 +1,67 @@
+from turtle import *
+from tkinter import *
+from random import *
+
+root=Tk()
+speed(0)
+for f in range(0,13):
+    write(f , align='center')
+    right(90)
+    penup()
+    forward(10)
+    pendown()
+    forward(150)
+    penup()
+    backward(160)
+    left(90)
+    penup()
+    forward(20)
+
+ad = Turtle()
+ad.color("red")
+ad.shape("turtle")
+ad.penup()
+ad.goto(-20,-20)
+for l in range(10):
+    ad.right(36)
+ad.pendown()
+
+
+
+cad = Turtle()
+cad.color("yellow")
+cad.shape("turtle")
+cad.penup()
+cad.goto(-20,-60)
+for l in range(10):
+    cad.right(36)
+cad.pendown()
+
+
+
+fad = Turtle()
+fad.color("black")
+fad.shape("turtle")
+fad.penup()
+fad.goto(-20,-100)
+for l in range(10):
+    fad.right(36)
+fad.pendown()
+
+aad=Turtle()
+aad.color("blue")
+aad.shape("turtle")
+aad.penup()
+aad.goto(-20,-140)
+for l in range(10):
+    aad.right(36)
+aad.pendown()
+
+for t in range(100):
+    ad.forward(randint(0,6))
+    cad.forward(randint(0,6))
+    fad.forward(randint(0, 6))
+    aad.forward(randint(0, 6))
+
+
+root.mainloop()
